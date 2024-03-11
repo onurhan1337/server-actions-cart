@@ -25,7 +25,9 @@ const ProductCard = ({ product }: { product: Product }) => {
       </div>
       <div className="mt-4 flex flex-col justify-between">
         <p className="mt-1 text-sm text-center text-gray-500">
-          <h3 className="text-sm text-center text-gray-700">{product.title}</h3>
+          <span className="text-sm text-center text-gray-700">
+            {product.title}
+          </span>
           {product.category}
         </p>
       </div>
