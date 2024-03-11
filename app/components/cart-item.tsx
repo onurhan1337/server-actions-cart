@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { XIcon } from "lucide-react";
 
-import { CartItem } from "@/lib/types";
+import { CartItem as CartItemType } from "@/lib/types";
 import { removeFromCart } from "../db/actions";
 import { toast } from "sonner";
 
-const CartItem = ({ item }: { item: CartItem }) => {
-  const onRemove = (item: CartItem) => {
+const CartItem = ({ item }: { item: CartItemType }) => {
+  const onRemove = (item: CartItemType) => {
     removeFromCart(item);
     toast.info(`${item.title} removed from cart`);
   };
