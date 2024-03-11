@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Cart from "../components/cart";
 import ProductsList from "../components/products-list";
 
@@ -8,7 +9,9 @@ export default function Home() {
         <h1>Products</h1>
         <Cart />
       </div>
-      <ProductsList />
+      <Suspense fallback={<div>Products are loading...</div>}>
+        <ProductsList />
+      </Suspense>
     </main>
   );
 }
