@@ -4,10 +4,11 @@ import { CartItem, Product } from "@/lib/types";
 import { sql } from "./postgres";
 import { revalidatePath } from "next/cache";
 
+const MAX_PRODUCTS = 10;
+const API_URL = "https://fakestoreapi.com/products";
+
 export async function getAllProducts() {
-  const products: Product[] = await fetch(
-    "https://fakestoreapi.com/products?limit=10"
-  )
+  const products: Product[] = await fetch(`${API_URL}?limit=${MAX_PRODUCTS}`)
     .then((res) => res.json())
     .then((data) => data);
 
