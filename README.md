@@ -1,4 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Server Actions Cart
+
+This is a Next.js project that implements a shopping cart functionality with server actions.
+
+## Project Structure
+
+- `app/`: Contains the main application code.
+  - `home/`: Contains the home page component.
+  - `components/`: Contains reusable components.
+  - `db/`: Contains database related files.
+- `lib/`: Contains utility functions and types.
+- `public/`: Contains public assets like images.
+
+## Built With
+
+- Next.js
+- React
+- TypeScript
+- Vercel Postgres
+- Shadcn UI
+
+## Demo
+
+[https://server-actions-cart-uv9c.vercel.app/](https://server-actions-cart-uv9c.vercel.app/)
 
 ## Getting Started
 
